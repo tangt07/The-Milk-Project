@@ -41,7 +41,7 @@ public class playerControllerScript : MonoBehaviour
 		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
 
 		// Disables player from moving horizontally while jumping in air
-		//if (!grounded)return;
+		if (!grounded)return;
 
 		// Set move to horizontal input
 		float move = Input.GetAxis ("Horizontal");
