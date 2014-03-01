@@ -17,10 +17,11 @@ public class playerMovement : MonoBehaviour
 	public Transform groundCheck;		// A position marking where to check if the player is grounded.
 	float groundRadius = 0.4f;			// Size of position marking.
 	public LayerMask whatIsGround;		// Defines what is ground.
+	private Animator anim;				// Reference to the Animator on the player
 
-	void Start ()
+		void Start ()
 		{
-	
+			anim = GetComponent <Animator>(); 		// Reference to the player's animator component.
 		}
 	
 		// Update is called once per frame
@@ -49,7 +50,14 @@ public class playerMovement : MonoBehaviour
 			if (grounded) {
 				curJumps = 0;
 			}
-	
+			// Grabs current anim parameter Ground from animator
+			anim.SetBool ("Ground", grounded);
+			// Specifies how fast the player moves vertically
+			anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+			// Set anim parameter Speed to move
+			anim.SetFloat ("Speed", Mathf.Abs(xVelocity(move)));
+			
+		
 		}
 		
 		void Jump(){
