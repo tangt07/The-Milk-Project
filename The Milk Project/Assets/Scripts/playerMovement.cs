@@ -75,7 +75,7 @@ public class playerMovement : MonoBehaviour
 			// Grabs current anim parameter Ground from animator
 			anim.SetBool ("Ground", grounded);
 			// Specifies how fast the player moves vertically
-			anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+			anim.SetFloat ("vSpeed", CurrentVelocity.y);
 			// Set anim parameter Speed to move
 			anim.SetFloat ("Speed", Mathf.Abs(CurrentVelocity.x));
 			
