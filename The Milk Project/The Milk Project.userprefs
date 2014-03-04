@@ -1,19 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/colliderScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/playerMovement.cs">
     <Files>
-      <File FileName="Assets/Scripts/playerHealthScript.cs" Line="50" Column="29" />
-      <File FileName="Assets/Scripts/playerControllerScript.cs" Line="34" Column="37" />
-      <File FileName="../Project/Assets/scriptCharController.cs" Line="1" Column="1" />
-      <File FileName="../Project/Assets/scriptHealth.cs" Line="1" Column="1" />
-      <File FileName="../Project/Assets/ScriptCharCollisions.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/colliderScript.cs" Line="16" Column="10" />
+      <File FileName="Assets/Scripts/playerMovement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/amyml/team-milk/The Milk Project/Assets/Scripts/playerHealthScript.cs" line="71" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

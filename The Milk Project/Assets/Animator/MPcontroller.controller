@@ -248,6 +248,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110225085
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MP_hit
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 7fa36c20c066a4c9ab6b535028f2eeb2, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 22, y: 250, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110228375
 State:
   m_ObjectHideFlags: 3
@@ -260,6 +275,21 @@ State:
   - {fileID: 7400000, guid: 18abf7adc2f2f4ffaaf886b23d1348cd, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 168, y: 372, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110237914
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MP_eatNC
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 5479ed6f346dd40d4b8346e26403a935, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -13, y: 185, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -371,6 +401,8 @@ StateMachine:
   - {fileID: 110296537}
   - {fileID: 110217337}
   - {fileID: 110280572}
+  - {fileID: 110237914}
+  - {fileID: 110225085}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:

@@ -2,21 +2,15 @@
 using System.Collections;
 
 public class colliderScript : MonoBehaviour {
+	bool gotHit = false;
 
-	private Animator anim;
-
-	void awake ()
+	
+	void OnTriggerEnter2D(Collider2D other) 
 	{
-		anim = transform.parent.GetComponent<Animator>();
-	}
-
-	void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log("whoa there!");
-
-		anim.SetTrigger("Die");
-
-		//anim.SetTrigger("Die");
-		//Destroy(transform.parent.gameObject);
+		if (gameObject.tag == "Player");
+		gotHit = true;
+		//Debug.Log (gotHit);
+		//Debug.Log ("it's true");
 
 	}
 }
