@@ -5,6 +5,8 @@ Project("{7DD6E8C8-72C5-BFF2-7F24-E256DECD28EA}") = "The Milk Project", "Assembl
 EndProject
 Project("{7DD6E8C8-72C5-BFF2-7F24-E256DECD28EA}") = "The Milk Project", "Assembly-CSharp.csproj", "{66FAB636-48A9-82FA-9EAE-C92844F8725F}"
 EndProject
+Project("{7DD6E8C8-72C5-BFF2-7F24-E256DECD28EA}") = "The Milk Project", "Assembly-CSharp-Editor.csproj", "{8046B75E-8C2A-C69E-B711-2DF234F05FE2}"
+EndProject
 Project("{7DD6E8C8-72C5-BFF2-7F24-E256DECD28EA}") = "The Milk Project", "Assembly-UnityScript-firstpass.unityproj", "{85633EDE-E6C3-360E-37AC-185156CC6310}"
 EndProject
 Project("{7DD6E8C8-72C5-BFF2-7F24-E256DECD28EA}") = "The Milk Project", "Assembly-UnityScript.unityproj", "{7D74F22C-F7E2-9991-8857-719432D25586}"
@@ -23,6 +25,10 @@ Global
 		{66FAB636-48A9-82FA-9EAE-C92844F8725F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66FAB636-48A9-82FA-9EAE-C92844F8725F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66FAB636-48A9-82FA-9EAE-C92844F8725F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8046B75E-8C2A-C69E-B711-2DF234F05FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8046B75E-8C2A-C69E-B711-2DF234F05FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8046B75E-8C2A-C69E-B711-2DF234F05FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8046B75E-8C2A-C69E-B711-2DF234F05FE2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{85633EDE-E6C3-360E-37AC-185156CC6310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{85633EDE-E6C3-360E-37AC-185156CC6310}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85633EDE-E6C3-360E-37AC-185156CC6310}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,7 +41,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																							GlobalSection(MonoDevelopProperties) = preSolution
+																																																															GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

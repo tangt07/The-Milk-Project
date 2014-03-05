@@ -1,0 +1,72 @@
+-debug
+-target:library
+-nowarn:0169
+-out:'Temp/Assembly-CSharp.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
+-r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
+-r:'Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
+-define:UNITY_STANDALONE_OSX
+-define:ENABLE_MICROPHONE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_AUDIO_FMOD
+-define:UNITY_STANDALONE
+-define:ENABLE_MONO
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_GENERICS
+-define:ENABLE_SUBSTANCE
+-define:INCLUDE_WP8SUPPORT
+-define:ENABLE_MOVIES
+-define:ENABLE_WWW
+-define:ENABLE_IMAGEEFFECTS
+-define:INCLUDE_METROSUPPORT
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_NETWORK
+-define:ENABLE_PHYSICS
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_2D_PHYSICS
+-define:ENABLE_GAMECENTER
+-define:ENABLE_SHADOWS
+-define:ENABLE_AUDIO
+-define:ENABLE_NAVMESH_CARVING
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:UNITY_4_3_4
+-define:UNITY_4_3
+-define:ENABLE_PROFILER
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_OSX
+'Assets/2DTile/Demo/Scripts/MoveCamera.cs'
+'Assets/2DTile/Demo/Scripts/Player.cs'
+'Assets/2DTile/Scripts/TileLayer.cs'
+'Assets/2DTile/Scripts/TileMarker.cs'
+'Assets/Scripts (ex)/BackgroundParallax.cs'
+'Assets/Scripts (ex)/BackgroundPropSpawner.cs'
+'Assets/Scripts (ex)/BombPickup.cs'
+'Assets/Scripts (ex)/CameraFollow.cs'
+'Assets/Scripts (ex)/Destroyer.cs'
+'Assets/Scripts (ex)/FollowPlayer.cs'
+'Assets/Scripts (ex)/Gun.cs'
+'Assets/Scripts (ex)/HealthPickup.cs'
+'Assets/Scripts (ex)/LayBombs.cs'
+'Assets/Scripts (ex)/Pauser.cs'
+'Assets/Scripts (ex)/PickupSpawner.cs'
+'Assets/Scripts (ex)/PlayerControl.cs'
+'Assets/Scripts (ex)/PlayerHealth.cs'
+'Assets/Scripts (ex)/Remover.cs'
+'Assets/Scripts (ex)/Score.cs'
+'Assets/Scripts (ex)/ScoreShadow.cs'
+'Assets/Scripts (ex)/SetParticleSortingLayer.cs'
+'Assets/Scripts (ex)/Spawner.cs'
+'Assets/Scripts/Enemy.cs'
+'Assets/Scripts/Health.cs'
+'Assets/Scripts/colliderScript.cs'
+'Assets/Scripts/playerCollisions.cs'
+'Assets/Scripts/playerControllerScript.cs'
+'Assets/Scripts/playerHealthScript.cs'
+'Assets/Scripts/playerMovement.cs'
+'Assets/enemyControllerScript.cs'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
