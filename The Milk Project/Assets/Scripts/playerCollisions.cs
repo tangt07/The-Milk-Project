@@ -32,19 +32,10 @@ public class playerCollisions : MonoBehaviour
 		Enemy e;
 		e = collision.gameObject.GetComponent<Enemy> ();
 		if(e != null){
-
+			playerhealth.TakeDamage(e.damage);
 		}
 	}
-	IEnumerator Example() {
-		print("Starting " + Time.time);
-		yield return WaitAndPrint();
-		print("Done " + Time.time);
-	}
 
-	IEnumerator WaitAndPrint() {
-		yield return new WaitForSeconds(5);
-		print("WaitAndPrint " + Time.time);
-	}
 
 }
 
