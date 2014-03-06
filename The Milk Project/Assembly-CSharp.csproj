@@ -46,10 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\2DTile\Demo\Scripts\MoveCamera.cs" />
-     <Compile Include="Assets\2DTile\Demo\Scripts\Player.cs" />
-     <Compile Include="Assets\2DTile\Scripts\TileLayer.cs" />
-     <Compile Include="Assets\2DTile\Scripts\TileMarker.cs" />
      <Compile Include="Assets\Scripts (ex)\BackgroundParallax.cs" />
      <Compile Include="Assets\Scripts (ex)\BackgroundPropSpawner.cs" />
      <Compile Include="Assets\Scripts (ex)\BombPickup.cs" />
@@ -85,7 +81,6 @@
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
-     <None Include="Assets\2DTile\Shaders\2DTile.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />

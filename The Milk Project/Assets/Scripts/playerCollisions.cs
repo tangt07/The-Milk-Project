@@ -21,7 +21,7 @@ public class playerCollisions : MonoBehaviour
 		}
 		if (Input.GetKeyDown (KeyCode.K)) {
 			playerhealth.Revive();
-			Example();
+			//Example();
 
 		}
 
