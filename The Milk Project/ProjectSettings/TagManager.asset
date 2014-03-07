@@ -38,7 +38,7 @@ TagManager:
   User Layer 12: Ground
   User Layer 13: Platform
   User Layer 14: Wall
-  User Layer 15: 
+  User Layer 15: Background
   User Layer 16: 
   User Layer 17: 
   User Layer 18: 
@@ -68,13 +68,17 @@ TagManager:
     userID: 2
     uniqueID: 1535931219
     locked: 0
-  - name: Character
-    userID: 4
-    uniqueID: 2511236001
+  - name: Floor
+    userID: 6
+    uniqueID: 2910590081
     locked: 0
   - name: Foreground
     userID: 3
     uniqueID: 1024582385
+    locked: 0
+  - name: Character
+    userID: 4
+    uniqueID: 2511236001
     locked: 0
   - name: UI
     userID: 5
