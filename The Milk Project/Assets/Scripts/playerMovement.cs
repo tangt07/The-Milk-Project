@@ -38,15 +38,15 @@ public class playerMovement : MonoBehaviour
 			bool jump = Input.GetButtonDown ("Jump");
 			
 			// The player is grounded if the position marking to the groundcheck position hits anything on the ground layer.
-			grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
-			
+			//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+			grounded = Physics2D.Linecast(groundCheck.position,transform.position,whatIsGround);
 			
 			
 			if ((right && !facingRight) || (left && facingRight)) {
 				Flip ();
 			}
 			
-			if (grounded && CurrentVelocity.y == 0) {
+			if (grounded) {
 				curJumps = 0;	
 			}	
 			NewVelocity = CurrentVelocity;
