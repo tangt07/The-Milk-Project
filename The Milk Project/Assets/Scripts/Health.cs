@@ -62,7 +62,9 @@ public class Health : MonoBehaviour
 				dead=true;
 				anim.SetTrigger("Die");
 				//Destroy(gameObject,3f);
-				playermovement.enable = false;
+				if(currentTag == "Player"){
+					playermovement.enable = false;
+				}
 			}
 		}
 		else{
@@ -70,7 +72,9 @@ public class Health : MonoBehaviour
 			if(dead){
 				dead=false;
 				//Revive
-				playermovement.enable=true;
+				if(currentTag == "Player"){
+					playermovement.enable=true;
+				}
 			}
 		}
 
