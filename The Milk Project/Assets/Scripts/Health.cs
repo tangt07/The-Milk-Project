@@ -61,6 +61,7 @@ public class Health : MonoBehaviour
 			if(!dead){
 				dead=true;
 				anim.SetTrigger("Die");
+				//Destroy(gameObject,3f);
 				playermovement.enable = false;
 			}
 		}
