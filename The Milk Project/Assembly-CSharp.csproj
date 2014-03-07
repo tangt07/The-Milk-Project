@@ -64,8 +64,10 @@
      <Compile Include="Assets\Scripts (ex)\ScoreShadow.cs" />
      <Compile Include="Assets\Scripts (ex)\SetParticleSortingLayer.cs" />
      <Compile Include="Assets\Scripts (ex)\Spawner.cs" />
+     <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
+     <Compile Include="Assets\Scripts\TargetCollider.cs" />
      <Compile Include="Assets\Scripts\colliderScript.cs" />
      <Compile Include="Assets\Scripts\playerCollisions.cs" />
      <Compile Include="Assets\Scripts\playerControllerScript.cs" />
