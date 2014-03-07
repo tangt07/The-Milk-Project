@@ -28,6 +28,7 @@ public class playerMovement : MonoBehaviour
 	void Update ()
 	{
 		if (enable) {
+			
 			float direction = Input.GetAxis ("Horizontal");
 			
 			Vector2 CurrentVelocity = rigidbody2D.velocity;
@@ -39,14 +40,14 @@ public class playerMovement : MonoBehaviour
 			
 			// The player is grounded if the position marking to the groundcheck position hits anything on the ground layer.
 			//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
-			grounded = Physics2D.Linecast(groundCheck.position,transform.position,whatIsGround);
+			grounded = Physics2D.Linecast(transform.position,groundCheck.position,whatIsGround);
 			
 			
 			if ((right && !facingRight) || (left && facingRight)) {
 				Flip ();
 			}
 			
-			if (grounded) {
+			if (grounded && CurrentVelocity.y == 0) {
 				curJumps = 0;	
 			}	
 			NewVelocity = CurrentVelocity;
@@ -77,10 +78,20 @@ public class playerMovement : MonoBehaviour
 			// Specifies how fast the player moves vertically
 			anim.SetFloat ("vSpeed", CurrentVelocity.y);
 			// Set anim parameter Speed to move
-			anim.SetFloat ("Speed", Mathf.Abs (CurrentVelocity.x));
-		}		
-		
-		
+			if(left || right){
+				float speed;
+				speed = Mathf.Abs(CurrentVelocity.x);
+				if(speed <= .1f){
+					speed=.1f;
+				}
+				anim.SetFloat ("Speed", speed);
+			}
+			else{
+				anim.SetFloat("Speed",0f);
+			}
+			
+			
+		}
 	}
 	
 	void Move(Vector2 Velocity){
@@ -97,7 +108,6 @@ public class playerMovement : MonoBehaviour
 		
 		
 	}
-	
 	
 	
 	
