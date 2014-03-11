@@ -1,14 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Health.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/playerMovement.cs">
     <Files>
-      <File FileName="Assets\Scripts\playerCollisions.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Health.cs" Line="64" Column="7" />
-      <File FileName="Assets\Scripts\playerMovement.cs" Line="41" Column="79" />
-      <File FileName="Assets\enemyControllerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TargetCollider.cs" Line="14" Column="3" />
-      <File FileName="Assets\Scripts\CameraMovement.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/playerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TargetCollider.cs" Line="1" Column="1" />
+      <File FileName="Assets/enemyControllerScript.cs" Line="5" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
