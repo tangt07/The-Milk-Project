@@ -94,7 +94,7 @@ public class playerMovement : MonoBehaviour
 		}
 	}
 	
-	void Move(Vector2 Velocity){
+	public void Move(Vector2 Velocity){
 		rigidbody2D.velocity = new Vector2(Velocity.x,Velocity.y);
 		
 		

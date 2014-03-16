@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
 	private Animator anim;				// Reference to the Animator on the player
 	playerMovement playermovement;
 	string currentTag;
-
+	public bool invulnerable = false;
 
 	void Update () {
 
@@ -29,6 +29,7 @@ public class Health : MonoBehaviour
 			SetHealth(maxhealth);
 			playermovement = gameObject.GetComponent<playerMovement>();
 			playermovement.enable = true;
+
 		}
 		
 		if (currentTag == "Enemy") {
@@ -46,11 +47,23 @@ public class Health : MonoBehaviour
 		DeadCheck ();
 	}
 	private void AdjustHealth(float adjustment){
+
 		health += adjustment;
 		DeadCheck();	
 	}
 	public void TakeDamage(float damage){
-		AdjustHealth (-damage);
+		if(!invulnerable){
+			AdjustHealth (-damage);
+
+		}
+		else{
+			//took damage with powerup
+			invulnerable = false;
+
+
+		}			
+		anim.SetTrigger("Hurt");
+
 	}
 	public void Revive(){
 		SetHealth (maxhealth);
@@ -60,9 +73,12 @@ public class Health : MonoBehaviour
 			health = minhealth;
 			if(!dead){
 				dead=true;
+				anim.SetBool("Ground",true);
 				anim.SetTrigger("Die");
+				//anim.CrossFade("MP_die",0f);
 				//Destroy(gameObject,3f);
 				if(currentTag == "Player"){
+					playermovement.Move(Vector2.zero);
 					playermovement.enable = false;
 				}
 			}
