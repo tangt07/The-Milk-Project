@@ -7,12 +7,13 @@ public class PowerStates : MonoBehaviour {
 	public Collider2D Chocolate;
 	private Animator anim;
 	Health playerhealth;
+	playerMovement playermovement;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent <Animator> (); 		// Reference to the player's animator component.
 
 		playerhealth = GetComponent<Health>();
-
+		playermovement = GetComponent<playerMovement> ();
 	
 	}
 
@@ -25,12 +26,14 @@ public class PowerStates : MonoBehaviour {
 			Debug.Log("hit chocolate");
 			playerhealth.invulnerable = true;			
 			anim.SetTrigger("PowerUpNC");
+			playermovement.maxJumps = 2;
 
 		}
 		if (collision.collider == Strawberry) {
 			Debug.Log("hit strawberry");
 			playerhealth.invulnerable = true;		
 			anim.SetTrigger("PowerUpNS");
+			playermovement.maxJumps = 1;
 
 		}
 

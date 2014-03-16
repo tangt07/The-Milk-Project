@@ -59,7 +59,7 @@ public class Health : MonoBehaviour
 		else{
 			//took damage with powerup
 			invulnerable = false;
-
+			playermovement.maxJumps = 1;
 
 		}			
 		anim.SetTrigger("Hurt");
